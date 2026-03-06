@@ -1,0 +1,148 @@
+/* Genel Sifirlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e8;
+    padding: 30px;
+}
+
+/* Sayfa Kutusu */
+.sayfa {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+/* ===================== */
+/* Ust Kisim: h1 + Menu  */
+/* ===================== */
+.ust {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.ust h1 {
+    display: inline-block;
+    width: 40%;
+    font-size: 22px;
+    color: #333;
+}
+
+.ust nav {
+    display: inline-block;
+    width: 58%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+/* Hiyerarsik secici 1: nav icindeki ul */
+nav ul {
+    list-style: none;
+}
+
+/* Hiyerarsik secici 2: nav icindeki li */
+nav li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* Hiyerarsik secici 3: nav icindeki a */
+nav a {
+    text-decoration: none;
+    color: #555;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+
+/* Aktif link */
+nav a.aktif {
+    background-color: #7b84a3;
+    color: white;
+}
+
+/* Hover efekti */
+nav a:hover {
+    background-color: #7b84a3;
+    color: white;
+}
+
+/* ================ */
+/* Aciklama Alani   */
+/* ================ */
+.aciklama {
+    border-left: 4px solid #7b84a3;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.vurgulu {
+    color: #7b84a3;
+}
+
+/* ======================== */
+/* Iki Sutunlu Icerik Alani */
+/* ======================== */
+.icerik-alani {
+    margin: 20px 0;
+}
+
+.sol {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    background-color: #fdf6e3;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.sag {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    background-color: #e8f4f8;
+    border: 1px solid #b8d4e3;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Grup secici: sol ve sag kutulardaki h2 */
+.sol h2, .sag h2 {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+/* Grup secici: sol ve sag kutulardaki p */
+.sol p, .sag p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* ======= */
+/* Footer  */
+/* ======= */
+.alt {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    font-size: 14px;
+}
