@@ -1,4 +1,4 @@
-/* Genel Sayfa Stilleri */
+/* Genel Sifirlama */
 * {
     margin: 0;
     padding: 0;
@@ -6,73 +6,98 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #eef1f5;
     color: #333;
-    line-height: 1.6;
-    padding: 20px;
+    line-height: 1.7;
 }
 
-header {
+/* Sayfa Sarmalayici */
+.sayfa-wrap {
+    max-width: 900px;
+    margin: 30px auto;
     background-color: #fff;
-    padding: 20px 30px;
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px 40px;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 24px;
-    color: #222;
+    font-size: 28px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
 }
 
 header p {
-    color: #666;
+    color: #bdc3c7;
+    font-size: 15px;
+}
+
+/* ========== NAV ========== */
+nav {
+    background-color: #34495e;
 }
 
 nav ul {
     list-style: none;
-    background-color: #fff;
-    padding: 10px 20px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 nav li {
-    display: inline-block;
-    margin-right: 20px;
+    margin: 0;
 }
 
 nav a {
+    display: block;
     text-decoration: none;
-    color: #555;
-    padding: 5px 10px;
+    color: #ecf0f1;
+    padding: 12px 25px;
+    font-size: 14px;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    color: #000;
-    text-decoration: underline;
+    background-color: #2c3e50;
+    color: #fff;
 }
 
+/* ========== MAIN ========== */
 main {
-    background-color: #fff;
-    padding: 20px 30px;
-    margin-bottom: 15px;
+    padding: 30px 40px;
 }
 
 main section {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 main h2 {
     font-size: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    color: #2c3e50;
+    border-left: 4px solid #3498db;
+    padding-left: 12px;
+    margin-bottom: 12px;
 }
 
 main h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    font-size: 16px;
+    color: #34495e;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+main p {
+    margin-bottom: 8px;
+    color: #555;
 }
 
 main ul, main ol {
@@ -80,76 +105,142 @@ main ul, main ol {
     margin-bottom: 10px;
 }
 
+main li {
+    margin-bottom: 4px;
+}
+
+main a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Blockquote */
+blockquote {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 15px 20px;
+    margin: 10px 0;
+    font-style: italic;
+    color: #555;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Definition List */
+dt {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* ========== FOOTER ========== */
 footer {
-    background-color: #fff;
+    background-color: #2c3e50;
     text-align: center;
-    padding: 15px;
-    color: #777;
-    border-top: 1px solid #ddd;
+    padding: 20px;
+    color: #95a5a6;
+    font-size: 14px;
 }
 
 footer a {
-    color: #555;
+    color: #3498db;
+    text-decoration: none;
 }
 
-/* İletişim Formu - Box Model */
+footer a:hover {
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* ================================================ */
+/* İletişim Formu - Box Model                        */
+/* ================================================ */
 
 .contact-container {
-    width: 600px;
+    width: 85%;
     margin: 30px auto;
     padding: 30px;
-    border: 2px solid #999;
+    border: 2px solid #bdc3c7;
     border-radius: 8px;
-    background-color: #fafafa;
+    background-color: #fdfdfd;
 }
 
 .contact-container h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #2c3e50;
+    font-size: 22px;
 }
 
-label {
+.contact-container label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
+    font-size: 14px;
 }
 
-input, select, textarea {
+.contact-container input,
+.contact-container select,
+.contact-container textarea {
     width: 100%;
-    padding: 10px;
+    padding: 10px 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 14px;
-    box-sizing: border-box;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.contact-container input:focus,
+.contact-container select:focus,
+.contact-container textarea:focus {
+    border-color: #3498db;
+    outline: none;
 }
 
 .radio-group, .checkbox-group {
-    background-color: #f5f5f5;
-    padding: 10px 15px;
-    border-radius: 4px;
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
     margin-bottom: 15px;
 }
 
 .radio-group label, .checkbox-group label {
     display: inline;
     font-weight: normal;
+    font-size: 14px;
 }
 
 .radio-group input, .checkbox-group input {
     width: auto;
     margin-bottom: 5px;
+    margin-right: 5px;
 }
 
-input[type="file"] {
-    padding: 5px;
+.contact-container input[type="file"] {
+    padding: 8px;
+    background-color: #f8f9fa;
 }
 
 .button-group {
     display: flex;
     gap: 15px;
+    margin-top: 10px;
 }
 
 .btn-gonder {
@@ -161,6 +252,7 @@ input[type="file"] {
     border-radius: 5px;
     cursor: pointer;
     flex: 1;
+    transition: background-color 0.3s;
 }
 
 .btn-temizle {
@@ -172,6 +264,7 @@ input[type="file"] {
     border-radius: 5px;
     cursor: pointer;
     flex: 1;
+    transition: background-color 0.3s;
 }
 
 .btn-gonder:hover {
