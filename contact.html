@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Mert Baytaş</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>İletişim</h1>
+        <p>Benimle iletişime geçebileceğiniz bilgiler</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>İletişim Bilgilerim</h2>
+            <ul>
+                <li>E-posta: <a href="mailto:mertbaytas@gmail.com">mertbaytas@gmail.com</a></li>
+                <li>Telefon: <a href="tel:+905312099084">+90 531 209 90 84</a></li>
+                <li>GitHub: <a href="https://github.com/baytasmert" target="_blank">GitHub Profilim</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/mertbaytas/" target="_blank">LinkedIn Profilim</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sık Sorulan Sorular</h2>
+
+            <h3>Mesajlara ne kadar sürede dönüş yapıyorsunuz?</h3>
+            <p>Genellikle 24 saat içinde e-posta yoluyla dönüş yapıyorum.</p>
+
+            <h3>Projelerde iş birliğine açık mısınız?</h3>
+            <p>Evet, özellikle eğitim ve açık kaynak projelerinde iş birliklerine açığım.</p>
+        </section>
+    </main>
+
+    <!-- İletişim Formu -->
+    <div class="contact-container">
+        <h2>Detaylı İletişim Formu</h2>
+        <form>
+            <label for="ad-soyad">Ad Soyad:</label>
+            <input type="text" id="ad-soyad" name="ad-soyad" placeholder="Örn: Asaf Karataş">
+
+            <label for="eposta">E-posta Adresi:</label>
+            <input type="email" id="eposta" name="eposta" placeholder="ornek@mail.com">
+
+            <label for="sifre">Başvuru Takip Şifresi:</label>
+            <input type="password" id="sifre" name="sifre" placeholder="Şifrenizi girin">
+
+            <label>İletişim Tercihi:</label>
+            <div class="radio-group">
+                <input type="radio" id="eposta-tercih" name="iletisim-tercih" value="eposta" checked>
+                <label for="eposta-tercih">Bana e-posta ile ulaşın</label><br>
+                <input type="radio" id="telefon-tercih" name="iletisim-tercih" value="telefon">
+                <label for="telefon-tercih">Bana telefonla ulaşın</label>
+            </div>
+
+            <label>İlgi Alanları / Yetenekler:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="html" name="yetenekler" value="html">
+                <label for="html">HTML</label><br>
+                <input type="checkbox" id="css" name="yetenekler" value="css">
+                <label for="css">CSS</label><br>
+                <input type="checkbox" id="algoritma" name="yetenekler" value="algoritma">
+                <label for="algoritma">Algoritma</label>
+            </div>
+
+            <label for="konu">Konu:</label>
+            <select id="konu" name="konu">
+                <option value="">Lütfen bir konu seçin...</option>
+                <option value="is-teklifi">İş Teklifi</option>
+                <option value="soru">Soru</option>
+                <option value="geri-bildirim">Geri Bildirim</option>
+            </select>
+
+            <label for="dosya">Özgeçmiş (CV) veya Fotoğraf Yükle:</label>
+            <input type="file" id="dosya" name="dosya">
+
+            <label for="mesaj">Mesajınız:</label>
+            <textarea id="mesaj" name="mesaj" rows="6" placeholder="Detaylı mesajınızı buraya yazabilirsiniz..."></textarea>
+
+            <div class="button-group">
+                <button type="submit" class="btn-gonder">Gönder</button>
+                <button type="reset" class="btn-temizle">Temizle</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p><a href="index.html">&larr; Ana sayfaya geri dön</a></p>
+        <p>&copy; 2026 Mert Baytaş | Web Programlama Dersi</p>
+    </footer>
+
+</body>
+</html>
