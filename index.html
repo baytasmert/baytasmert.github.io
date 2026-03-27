@@ -20,73 +20,143 @@
             <li><a href="#">Iletisim</a></li>
         </ul>
     </nav>
+    <div class="tags">
+        <span class="tag">flex layout</span>
+        <span class="tag">justify-content</span>
+        <span class="tag">flex layout</span>
+        <span class="tag">10vh height</span>
+        <span class="tag">100w height</span>
+        <span class="tag">100vw width</span>
+    </div>
 
     <!-- 2) Hero -->
     <section class="hero">
         <div class="hero-text">
             <h1>Hero Baslik</h1>
             <p>Aciklama metni</p>
+            <hr>
             <button class="btn">Buton</button>
         </div>
         <div class="hero-image">
-            <div class="placeholder-img"></div>
+            <div class="placeholder-img">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 16l4-4 4 4 4-6 4 6" stroke="#b0b8c4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="15" cy="8" r="2" fill="#b0b8c4" opacity="0.6"/>
+                </svg>
+            </div>
         </div>
     </section>
+    <div class="tags">
+        <span class="tag">flex-direction: <span class="tag-highlight">row: row</span></span>
+        <span class="tag">height: 30vh</span>
+        <span class="tag">align-items: <span class="tag-highlight">stretch</span></span>
+    </div>
 
     <!-- 3) Kartlar Bolumu -->
-    <section class="kartlar">
-        <div class="kart">
-            <h3>Kart Basligi</h3>
-            <p>Kisa aciklama</p>
-            <button class="btn">Buton</button>
+    <section class="section-block">
+        <div class="section-header">
+            <h2>Kartlar Bolumu</h2>
+            <div class="header-tags">
+                <span class="tag">multiple items</span>
+                <span class="tag">flex layout - wrap</span>
+            </div>
         </div>
-        <div class="kart">
-            <h3>Kart Basligi</h3>
-            <p>Kisa aciklama</p>
-            <button class="btn">Buton</button>
+        <div class="kartlar">
+            <div class="kart">
+                <h3>Kart Basligi</h3>
+                <p>Kisa aciklama</p>
+                <button class="btn">Buton</button>
+            </div>
+            <div class="kart">
+                <h3>Kart Basligi</h3>
+                <p>Kisa aciklama</p>
+                <button class="btn btn-green">Buton</button>
+            </div>
+            <div class="kart">
+                <h3>Kart Basligi</h3>
+                <p>Kisa aciklama</p>
+                <button class="btn btn-orange">Buton</button>
+            </div>
+            <div class="kart">
+                <h3>Kart Basligi</h3>
+                <p>Kisa aciklama</p>
+                <button class="btn btn-green">Buton</button>
+            </div>
         </div>
-        <div class="kart">
-            <h3>Kart Basligi</h3>
-            <p>Kisa aciklama</p>
-            <button class="btn">Buton</button>
-        </div>
-        <div class="kart">
-            <h3>Kart Basligi</h3>
-            <p>Kisa aciklama</p>
-            <button class="btn">Buton</button>
-        </div>
-        <div class="kart">
-            <h3>Kart Basligi</h3>
-            <p>Kisa aciklama</p>
-            <button class="btn">Buton</button>
-        </div>
-        <div class="kart">
-            <h3>Kart Basligi</h3>
-            <p>Kisa aciklama</p>
-            <button class="btn">Buton</button>
-        </div>
-    </section>
-
-    <!-- 4) Flex Grow Uygulama -->
-    <section class="flex-grow-section">
-        <div class="grow-box grow-1">
-            <h3>1 Kutu</h3>
-            <p>flex-grow: 1;</p>
-            <button class="btn">Buton</button>
-        </div>
-        <div class="grow-box grow-2">
-            <h3>2 Kutu</h3>
-            <p>flex-grow: 2;</p>
-            <button class="btn btn-orange">Buton</button>
-        </div>
-        <div class="grow-box grow-3">
-            <h3>3 Kutu</h3>
-            <p>flex-grow: 1;</p>
-            <button class="btn btn-red">Buton</button>
+        <div class="tags">
+            <span class="tag">flex-direction</span>
+            <span class="tag">flex layout + wrap</span>
+            <span class="tag">gap + align/hizalama</span>
+            <span class="tag">height: ic: 30vh</span>
         </div>
     </section>
 
-    <!-- 5) Footer -->
+    <!-- 4) Flex Grow Uygulama 1 (butonlu) -->
+    <section class="section-block">
+        <div class="section-header">
+            <h2>Flex Grow Uygulama</h2>
+            <div class="header-tags">
+                <span class="tag">flex-grow</span>
+                <span class="tag">height: 20vh</span>
+                <span class="tag">stretch (esneme)</span>
+            </div>
+        </div>
+        <div class="flex-grow-section">
+            <div class="grow-box grow-1">
+                <h3>1 Kutu</h3>
+                <p>flex-grow: 1;</p>
+                <button class="btn">Buton</button>
+            </div>
+            <div class="grow-box grow-2">
+                <h3>2 Kutu</h3>
+                <p>flex-grow: 2;</p>
+                <button class="btn btn-green">Buton</button>
+            </div>
+            <div class="grow-box grow-3">
+                <h3>3 Kutu</h3>
+                <p>flex-grow: 1;</p>
+                <button class="btn btn-red">Buton</button>
+            </div>
+        </div>
+        <div class="tags">
+            <span class="tag">multiple items</span>
+            <span class="tag">flex layout + wrap</span>
+            <span class="tag">gap + align/hizalama</span>
+        </div>
+    </section>
+
+    <!-- 5) Flex Grow Uygulama 2 (butonsuz) -->
+    <section class="section-block">
+        <div class="section-header">
+            <h2>Flex Grow Uygulama</h2>
+            <div class="header-tags">
+                <span class="tag">flex-grow:</span>
+                <span class="tag">height: 20vh</span>
+                <span class="tag">stretch (esneme)</span>
+            </div>
+        </div>
+        <div class="flex-grow-section flex-grow-short">
+            <div class="grow-box grow-1">
+                <h3>1 Kutu</h3>
+                <p>flex-grow: 1;</p>
+            </div>
+            <div class="grow-box grow-2">
+                <h3>2 Kutu</h3>
+                <p>flex-grow: 2;</p>
+            </div>
+            <div class="grow-box grow-3">
+                <h3>3 Kutu</h3>
+                <p>flex-grow: 1;</p>
+            </div>
+        </div>
+        <div class="tags">
+            <span class="tag">flex-grow</span>
+            <span class="tag">height: 20vh</span>
+            <span class="tag">stretch (esneme)</span>
+        </div>
+    </section>
+
+    <!-- 6) Footer -->
     <footer class="footer">
         <p>&copy; 2026 - Temel Flexbox Ornegi</p>
     </footer>
