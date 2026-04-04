@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Uygulamaları</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div class="contact_container">
+        <form action="#" method="post" target="_blank" autocomplete="on">    
+        <label for="ad">Adınız:</label><br>
+        <input type="text" id="ad" name="ad" placeholder="örnek: Mert" required><br>
+        <label for="soyad">Soyadınız:</label><br>
+        <input type="text" id="soyad" name="soyad" placeholder="örnek: Baytaş" required><br>
+        <label for="email">E-posta Adresiniz:</label><br>
+        <input type="email" id="email" name="mail" placeholder="örnek:abc@gmail.com" required><br>
+        <label for="konu">Konu:</label><br>
+        <select id="konu" name="konu" required>
+            <option value="İş Teklifi">İş Teklifi</option>
+            <option value="Soru">Soru</option>
+            <option value="Feedback">Geri Bildirim</option>
+        </select><br>
+        <textarea id="mesaj" name="mesaj" placeholder="Mesajınızı buraya yazın..." required style="width: 100%; height: 100px;"></textarea><br>
+        <input type="button" value="Gönder" onclick="alert('Gonderildi.');">
+        <input type="reset" value="Temizle">
+        </form>
+
+
+    </div>
+</body>
+</html>

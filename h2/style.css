@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial;
+    width: 75%;
+    margin: auto;
+    background-color: lightblue;
+}
+
+nav {
+    float: right;
+}
+.content{
+    margin-top: 50px;
+    background-color: darkcyan;
+}
+
+header {
+    padding: 5px 10px;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+}
+
+header h1{
+    float: left;
+    font-size: 24px;
+    padding-top: 10px;
+
+}
+header h1,nav{
+    margin-top: 0;
+    display: inline-block;
+}
+
+li{
+    display: inline-block;
+    padding: 0px 5px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+li.active{
+    background-color: steelblue;
+}
+
+nav a:hover{
+    background-color: red;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+main{
+    font-size: 0;
+    text-align: center;
+}
+
+section{
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+section h2{
+    font-size: 20px;
+}
+
+.icerik,.menu{
+    display: inline-block;
+    text-align: left;
+    width: 45%;
+    font-size: 16px;
+    vertical-align: top;
+    margin: 5px;
+}
+
+.icerik{
+    padding: 5px;
+    background-color: lightyellow;
+    border-left: 4px solid steelblue;
+}
+
+.menu{
+    padding: 5px;
+    background-color: lightgray;
+    border-left: 4px solid salmon;
+}
+
+.icerik h2, .menu h2{
+    font-size: 14px;
+}
+
+footer{
+    text-align: center ;
+    padding: 10px;
+}
+
+p{
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: darkblue;
+    line-height: 1.5;
+    text-align: start;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
