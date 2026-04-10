@@ -1,0 +1,24 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{min-height: 100vh; background-color: #f4f5f7; display: flex; flex-direction: column;}
+header{display: flex; height: 10vh; justify-content: space-between; align-items: center; padding: 0 1rem;}
+nav ul {
+  list-style: none; /* madde işaretini kaldırır */
+  margin: 0;        /* varsayılan margin sıfırlanır */
+  padding: 0;       /* varsayılan padding sıfırlanır */
+  display: flex;    /* yan yana sıralama için */
+  gap: 5px;        /* istersen aralıklı yapar */
+}
+
+.herolar{display: flex; height: 30vh;align-items: stretch; background-color: lightcoral
+    ;}
+.hero{flex: 1; border: 2px solid black; padding: 1%; }
+img{width: 100%; height: 100%; object-fit: cover;}
+.kartlar{display: flex; gap: 0.5rem; align-items: stretch; background-color: lightgreen;height: 30vh; flex-wrap: wrap;justify-content: space-around;overflow: scroll;}
+.kart{border: 2px solid black; }
+.flex-grow{align-items: stretch;height: 20vh; background-color: orange;display: flex;}
+.box1{flex: 1 0 0; border: 2px solid black; margin: 0.5rem;}
+.box2{flex: 2 0 0; border: 2px solid black; margin: 0.5rem;}
+.box3{flex: 1 0 0; border: 2px solid black; margin: 0.5rem;}
+
+footer{display: flex; height: 10vh; justify-content: center; align-items: center; background-color: lightblue;}
