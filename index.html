@@ -1,13 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Programlama - Ödevler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .homework-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .homework-item {
+            display: block;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .homework-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .homework-number {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>This is a simple HTML document.</p>  
-</body>
+    <div class="container">
+        <h1>Web Programlama</h1>
+        <p class="subtitle">Haftalık Ödevler</p>
 
+        <div class="homework-list">
+            <a href="h1/index.html" class="homework-item">
+                <span class="homework-number">Hafta 1</span>
+                <span>H1 Ödevi</span>
+            </a>
+            <a href="h2/index.html" class="homework-item">
+                <span class="homework-number">Hafta 2</span>
+                <span>H2 Ödevi</span>
+            </a>
+            <a href="h3/index.html" class="homework-item">
+                <span class="homework-number">Hafta 3</span>
+                <span>H3 Ödevi</span>
+            </a>
+            <a href="h4/index.html" class="homework-item">
+                <span class="homework-number">Hafta 4</span>
+                <span>H4 Ödevi</span>
+            </a>
+            <a href="h5/index.html" class="homework-item">
+                <span class="homework-number">Hafta 5</span>
+                <span>H5 Ödevi</span>
+            </a>
+        </div>
+    </div>
+</body>
 </html>
