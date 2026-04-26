@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: snow;
+    height: 100vh;
+}
+.container{
+    background-color: lightgray;
+    width: 60%;
+}
+h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+h2 {
+    text-align: start;
+    margin: 10px;
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+.icerik{
+    display: flex;
+
+}
+.bilgi{
+flex:2;
+}
+.menu{
+    flex: 1;
+}
+.list1{
+    list-style: none;
+    background-color: gray;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.list1 a{
+    color: white;
+    font-style: none;
+    background-color: black;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+.list1 li{
+    display: block;
+    margin: 10px 0;
+    background-color: black;
+    padding: 10px;
+}
+
+.bilgi {
+    margin: 10px 10px 10px 0;
+}
+.bilgi ul{
+    text-align: start;
+}
