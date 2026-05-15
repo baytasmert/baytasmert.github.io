@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.back-link {
+    margin-bottom: 20px;
+}
+
+.back-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.back-link a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(-5px);
+}
+
+.main-content {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.form-section {
+    padding: 40px;
+    border-bottom: 2px solid #eee;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.btn-hesapla, .btn-temizle {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn-hesapla {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-hesapla:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-temizle {
+    background: #f5f5f5;
+    color: #333;
+    border: 2px solid #ddd;
+}
+
+.btn-temizle:hover {
+    background: #eee;
+}
+
+.sonuc-section {
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+.sonuc-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sonuc-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sonuc-card p {
+    margin: 12px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.sonuc-card span {
+    font-weight: 600;
+    color: #667eea;
+}
+
+.bilgi-section {
+    padding: 40px;
+}
+
+.bilgi-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.bilgi-section h4 {
+    color: #555;
+    margin: 20px 0 15px 0;
+}
+
+.bilgi-section ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.bilgi-section li {
+    padding: 10px 0;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+
+.badge-aa, .badge-ba, .badge-bb, .badge-cb, .badge-cc, .badge-ff {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: white;
+}
+
+.badge-aa {
+    background: #4CAF50;
+}
+
+.badge-ba {
+    background: #8BC34A;
+}
+
+.badge-bb {
+    background: #FFC107;
+    color: #333;
+}
+
+.badge-cb {
+    background: #FF9800;
+}
+
+.badge-cc {
+    background: #F44336;
+}
+
+.badge-ff {
+    background: #9C27B0;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .form-section, .sonuc-section, .bilgi-section {
+        padding: 20px;
+    }
+}
