@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab: CSS Position - Teknoloji Toplantığı Etkinliği</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 20px;
+        }
+
+        .navbar a:hover {
+            color: #764ba2;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .main-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            min-height: 500px;
+        }
+
+        /* Card Title - Absolute Positioned */
+        .card-title {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 2em;
+            color: #333;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Main Content */
+        .card-content {
+            margin-top: 80px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .card-content p {
+            margin-bottom: 20px;
+        }
+
+        /* Badge 1 - Absolute Positioned (Top Right) */
+        .badge-free {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .badge-free:hover {
+            transform: scale(1.1);
+        }
+
+        /* Badge 2 - Absolute Positioned (Bottom Right) */
+        .badge-date {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .badge-date:hover {
+            background: #45a049;
+            box-shadow: 0 6px 15px rgba(76, 175, 80, 0.4);
+        }
+
+        /* Badge 3 - Absolute Positioned (Left Side) */
+        .badge-location {
+            position: absolute;
+            top: 50%;
+            left: -60px;
+            transform: translateY(-50%);
+            background: #FF9800;
+            color: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 13px;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .badge-location:hover {
+            transform: translateY(-50%) rotateZ(-5deg);
+            box-shadow: 0 6px 15px rgba(255, 152, 0, 0.4);
+        }
+
+        /* CTA Button - Absolute Positioned */
+        .cta-button {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+
+        .cta-button:active {
+            transform: translateY(-1px);
+        }
+
+        /* Footer Info Section */
+        .footer-info {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* Overlay Badge */
+        .overlay-badge {
+            position: absolute;
+            top: 120px;
+            right: 120px;
+            width: 80px;
+            height: 80px;
+            background: rgba(102, 126, 234, 0.1);
+            border: 2px dashed #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #667eea;
+            z-index: 1;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Back Button */
+        .back-btn {
+            position: fixed;
+            top: 80px;
+            left: 20px;
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            z-index: 99;
+        }
+
+        .back-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 30px;
+            }
+
+            .card-title {
+                font-size: 1.5em;
+            }
+
+            .badge-location {
+                display: none;
+            }
+
+            .badge-free {
+                top: 10px;
+                right: 10px;
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+
+            .cta-button {
+                left: 10px;
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+
+            .badge-date {
+                bottom: 10px;
+                right: 10px;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">← Ana Sayfa</a>
+        <span style="color: #999;">| CSS Position Lab</span>
+    </div>
+
+    <a href="index.html" class="back-btn">← Ana Sayfaya Dön</a>
+
+    <div class="header">
+        <h1>📍 CSS Position Etkinliği</h1>
+        <p>Position: relative, absolute ve fixed kullanarak öğren</p>
+    </div>
+
+    <div class="main-container">
+        <!-- Title (absolute) -->
+        <h2 class="card-title">Teknoloji Toplantığı 2026</h2>
+
+        <!-- Main Content -->
+        <div class="card-content">
+            <p>
+                <strong>Hoş geldiniz!</strong> Bu sayfada CSS position özelliklerini pratik ederek öğreneceksiniz.
+                Sayfada göreceğiniz her element farklı position değerleri kullanılarak konumlandırılmıştır.
+            </p>
+            <p>
+                <em>Position properties:</em>
+            </p>
+            <ul style="margin-left: 20px; margin-bottom: 20px;">
+                <li><strong>position: relative</strong> - Ana kapsayıcı için kullanılır</li>
+                <li><strong>position: absolute</strong> - Relative parent içinde konumlandırılan öğeler</li>
+                <li><strong>position: fixed</strong> - Scroll sırasında sabit duran navbar</li>
+            </ul>
+            <p>
+                Bu etkinlikte web teknolojilerinin en son gelişmelerini bir arada göreceksiniz.
+                Etkileşimli sunumlar, praktik atölyeler ve networking fırsatları sizi bekliyor.
+            </p>
+        </div>
+
+        <!-- Badge 1 (absolute, top-right) -->
+        <div class="badge-free">💜 ÜCRETSİZ</div>
+
+        <!-- Badge 2 (absolute, bottom-right) -->
+        <div class="badge-date">📅 24 Nisan</div>
+
+        <!-- Badge 3 (absolute, left-side, vertical) -->
+        <div class="badge-location">Konferans Salonu</div>
+
+        <!-- Overlay Badge (animation) -->
+        <div class="overlay-badge">100+ Katılımcı</div>
+
+        <!-- CTA Button (absolute, bottom-left) -->
+        <button class="cta-button" onclick="alert('Etkinliğe katılmak için tıkladınız!')">
+            Kayıt Olmak İçin Tıkla
+        </button>
+
+        <div class="footer-info">
+            <p>© 2026 Web Programlama Dersi - CSS Position Lab Ödevi</p>
+        </div>
+    </div>
+</body>
+</html>
